@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ec56c74-81ea-4932-b068-b5f1219bd13a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/Ex002.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex001.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex003.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex004.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex005.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex006.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex007.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex008.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex009.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex010.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex011.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex012.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex013.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex014.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex015.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex016.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex017.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex018.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex019.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex020.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex021.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex022.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex023.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex024.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex025.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex026.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/ex027.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,31 +13,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PythonExercicios/Aula010-Conditionals/ex032.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/World02/aula14-While.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <state relative-caret-position="696">
+              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PythonExercicios/Aula010-Conditionals/ex033.py">
+        <entry file="file://$PROJECT_DIR$/PythonExercicios/World02/Aula14-While/ex058.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PythonExercicios/Aula010-Conditionals/ex034.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/PythonExercicios/World02/Aula14-While/ex059.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PythonExercicios/Aula010-Conditionals/ex035.py">
+        <entry file="file://$PROJECT_DIR$/PythonExercicios/World02/Aula14-While/ex060.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PythonExercicios/World02/Aula14-While/ex061.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -76,6 +52,9 @@
       <list>
         <option value="$PROJECT_DIR$/PythonExercicios/Aula010-Conditionals/ex034.py" />
         <option value="$PROJECT_DIR$/PythonExercicios/Aula010-Conditionals/ex032.py" />
+        <option value="$PROJECT_DIR$/World02/aula14-While.py" />
+        <option value="$PROJECT_DIR$/PythonExercicios/World02/Aula14-While/ex057.py" />
+        <option value="$PROJECT_DIR$/PythonExercicios/World02/Aula14-While/ex061.py" />
       </list>
     </option>
   </component>
@@ -106,11 +85,26 @@
               <item name="PythonGuanabara" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonGuanabara" type="462c0819:PsiDirectoryNode" />
               <item name="PythonExercicios" type="462c0819:PsiDirectoryNode" />
-              <item name="Aula010-Conditionals" type="462c0819:PsiDirectoryNode" />
+              <item name="World02" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonGuanabara" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="PythonGuanabara" type="462c0819:PsiDirectoryNode" />
+              <item name="PythonExercicios" type="462c0819:PsiDirectoryNode" />
+              <item name="World02" type="462c0819:PsiDirectoryNode" />
+              <item name="Aula13-For" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonGuanabara" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonGuanabara" type="462c0819:PsiDirectoryNode" />
+              <item name="PythonExercicios" type="462c0819:PsiDirectoryNode" />
+              <item name="World02" type="462c0819:PsiDirectoryNode" />
+              <item name="Aula14-While" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonGuanabara" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonGuanabara" type="462c0819:PsiDirectoryNode" />
+              <item name="World02" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -121,7 +115,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="settings.editor.splitter.proportion" value="0.22099853" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -144,17 +138,89 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Python.ex061">
+    <configuration name="aula14-While" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonGuanabara" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/World02" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/World02/aula14-While.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ex057" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonGuanabara" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonExercicios/World02/Aula14-While" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonExercicios/World02/Aula14-While/ex057.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ex061" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonGuanabara" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonExercicios/World02/Aula14-While" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonExercicios/World02/Aula14-While/ex061.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.ex061" />
+        <item itemvalue="Python.ex057" />
+        <item itemvalue="Python.aula14-While" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1920" height="1005" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24986793" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24960423" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32997763" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -169,24 +235,41 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PythonExercicios/Aula010-Conditionals/ex032.py">
+    <entry file="file://$PROJECT_DIR$/PythonExercicios/Aula010-Conditionals/ex032.py" />
+    <entry file="file://$PROJECT_DIR$/PythonExercicios/Aula010-Conditionals/ex033.py" />
+    <entry file="file://$PROJECT_DIR$/PythonExercicios/Aula010-Conditionals/ex034.py" />
+    <entry file="file://$PROJECT_DIR$/PythonExercicios/Aula010-Conditionals/ex035.py" />
+    <entry file="file://$PROJECT_DIR$/PythonExercicios/World02/Aula14-While/ex057.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        <state relative-caret-position="96">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonExercicios/Aula010-Conditionals/ex033.py">
+    <entry file="file://$PROJECT_DIR$/World02/aula14-While.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonExercicios/World02/Aula14-While/ex058.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonExercicios/Aula010-Conditionals/ex034.py">
+    <entry file="file://$PROJECT_DIR$/PythonExercicios/World02/Aula14-While/ex059.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonExercicios/World02/Aula14-While/ex060.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonExercicios/World02/Aula13-For/ex051.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state>
+          <caret selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonExercicios/Aula010-Conditionals/ex035.py">
+    <entry file="file://$PROJECT_DIR$/PythonExercicios/World02/Aula14-While/ex061.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
