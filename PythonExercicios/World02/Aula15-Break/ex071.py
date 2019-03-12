@@ -47,4 +47,5 @@ while True:
 
     if continua == 'N':
         break
+
 print('Obrigadopor utilizar nossos serviços. Volte sempre.')
