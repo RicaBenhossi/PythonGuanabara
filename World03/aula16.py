@@ -55,5 +55,5 @@ pessoa = ('Lola', 12, 'Catioro', 0.23)
 print(pessoa)
 
 # You can't change a tuple but you can delete it.
-del(pessoa)
+# del(pessoa)
 print(pessoa)
