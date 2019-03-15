@@ -3,5 +3,5 @@
     "python.unitTest.pyTestEnabled": false,
     "python.unitTest.unittestEnabled": false,
     "python.unitTest.nosetestsEnabled": false,
-    "python.pythonPath": "/usr/bin/python3.7"
+    "python.pythonPath": "C:\\Python\\python.exe"
 }
