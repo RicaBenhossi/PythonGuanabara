@@ -4,6 +4,9 @@ while True:
     num = int(input('Digite um número: '))
     if num not in numeros:
         numeros.append(num)
+        print('Adicionado com sucesso.')
+    else:
+        print('Número já consta na lista.')
 
     while True:
         continua = str(input('Deseja Continuar? [S/N]')).upper().strip()[0]

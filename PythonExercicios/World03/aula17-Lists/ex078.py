@@ -1,22 +1,24 @@
 valores = list()
-maior = menor = pos_maior = pos_menor = 0
+maior = menor = 0
 
-for x in range(0, 5):
-    valores.append(int(input(f'Digite o {x + 1} número: ')))
-
-for pos in range(0, len(valores)):
+for pos in range(0, 5):
+    valores.append(int(input(f'Digite o {pos + 1} número: ')))
     if pos > 0:
         if maior < valores[pos]:
             maior = valores[pos]
-            pos_maior = pos
         elif menor > valores[pos]:
             menor = valores[pos]
-            pos_menor = pos
     else:
-        maior = valores[pos]
-        pos_maior = pos
-        menor = maior
-        pos_meno = pos_maior
+        maior = menor = valores[pos]
+
 print('-' * 20)
-print(f'O maior número foi {maior}, digitado na posição {pos_maior}.')
-print(f'O menor número foi {menor}, digitado na posição {pos_menor}.')
+print(f'O maior número foi {maior}, digitado na(s) posição(ões) ', end='')
+for posicao, valor in enumerate(valores):
+    if valor == maior:
+        print(f'{posicao}... ', end='')
+print()
+print(f'O menor número foi {menor}, digitado na(s) posição(ões) ', end='')
+for posicao, valor in enumerate(valores):
+    if valor == menor:
+        print(f'{posicao}... ', end='')
+print()

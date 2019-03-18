@@ -14,12 +14,14 @@ print('Insert\n', num)
 # SORT
 num.sort()
 print('Sort\n', num)
-# Sort in reverse mode 2 ways
-num.reverse()
-print('reverse\n', num)
+# Sort decrescent
 num.sort(reverse=True)
 print('sort(reverse=True)\n', num)
 print(f'len \n', len(num))
+
+# To reverse the order of a list
+num.reverse()
+print('reverse\n', num)
 
 # Removing
 # POP uses an index as parameter
@@ -65,7 +67,7 @@ for c, v in enumerate(valores):
     print(f'Na posição {c} encontrei o valor {v}...')
 print('fim da lista')
 
-a = [ 2, 3, 4, 7]
+a = [2, 3, 4, 7]
 b = a  # This attribution crates a "mirror"
 print(f'lista A {a}')
 print(f'Lista B {b}')
@@ -81,7 +83,7 @@ b[2] = 100  # Now, you can change only list b
 print(f'lista A {a}')
 print(f'Lista B {b}')
 
-c = a+b  #This makes a copy too.
+c = a+b  # This makes a copy too.
 c[3] = 1000
 c[6] = 2999
 
