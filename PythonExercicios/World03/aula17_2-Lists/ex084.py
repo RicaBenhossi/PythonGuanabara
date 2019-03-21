@@ -3,15 +3,8 @@ pesadas = list()
 leves = list()
 
 while True:
-    pessoas.append(str(input('Nome: ')))
-    pessoas.append(float(input('Peso: ')))
+    pessoas.append([str(input('Nome: ')), float(input('Peso: '))])
 
-    if pessoas[1] >= 85:
-        pesadas.append(pessoas[:])
-    else:
-        leves.append(pessoas[:])
-
-    pessoas.clear()
     while True:
         resposta = str(input('Deseja continuar?[S/N] ')).strip().upper()[0]
         if resposta not in 'SN':
@@ -21,24 +14,17 @@ while True:
 
     if resposta == 'N':
         break
+print(pessoas)
 
-print('-' * 50)
-print(f'Foram digitadas ao todo {len(pesadas) + len(leves)} pessoa(s)')
-if pesadas:
-    print(f'A(s) pessoa(s) com peso maior que 85 KG foi(ram): ', end='')
-    for nome in pesadas:
-        print(f'{nome[0]} ', end=' ')
+mais_pesadas = max(pessoas)[1]
+mais_leves = min(pessoas)[1]
 
-    print()
-else:
-    print('Não foi informada nenhuma pessoa com peso acima de 85 Kg.')
+for nome, peso in pessoas:
+    if peso == mais_pesadas:
+        pesadas.append(nome)
+    elif peso == mais_leves:
+        leves.append(nome)
 
-if leves:
-    print(f'A(s) pessoa(s) com peso menor que de 85 KG foi(ram): ', end='')
-    for nome in leves:
-        print(f'{nome[0]}', end=' ')
-
-    print()
-else:
-    print('Não foi informada nenhuma pessoa com peso abaixo de 85 KG.')
-
+print(f'Você informou ao todo {len(pessoas)} pessoa(s)')
+print(f'O maior peso digitado foi {mais_pesadas} Kg, das pessas {pesadas}.')
+print(f'O meno peso digitado foi {mais_leves} Kg, das pessoas {leves}.')

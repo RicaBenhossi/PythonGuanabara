@@ -1,12 +1,12 @@
-lista = list(([], []))
+matriz = list()
 
-for x in range(0, 7):
-    valor = int(input('Digite um valor: '))
-    if (valor % 2 == 0) or (valor == 0):
-        lista[0].append(valor)
+for x in range(0, 3):
+    matriz.append([])
+    for y in range(0, 3):
+        matriz[x].append(int(input(f'Digite o número da célula [{x + 1},{y + 1}]: ')))
+
+for x in range(0, 3):
+    for y in range(0, 3):
+        print(f'[ {matriz[x][y]} ]', end='')
     else:
-        lista[1].append(valor)
-lista[0].sort()
-lista[1].sort()
-print(f'Os valores pares digitados foram {lista[0]}.')
-print(f'Os valores ímpares digitados foram {lista[1]}.')
+        print()
