@@ -19,6 +19,7 @@ print(pessoas)
 mais_pesadas = max(pessoas)[1]
 mais_leves = min(pessoas)[1]
 
+# Teachers didn't do this way. He didn't use a list
 for nome, peso in pessoas:
     if peso == mais_pesadas:
         pesadas.append(nome)
@@ -28,3 +29,13 @@ for nome, peso in pessoas:
 print(f'Você informou ao todo {len(pessoas)} pessoa(s)')
 print(f'O maior peso digitado foi {mais_pesadas} Kg, das pessas {pesadas}.')
 print(f'O meno peso digitado foi {mais_leves} Kg, das pessoas {leves}.')
+
+# teachers way
+print(f'O maior peso digitado foi {mais_pesadas} Kg, das pessas ', end='')
+for p in pessoas:
+    if p[1] > mais_pesadas:
+        print(f'{p[0]}', end='')
+print(f'O menor peso digitado foi {mais_leves} Kg, das pessoas ', end='')
+for p in pesoas:
+    if p[1] < mais_leves:
+        print(f'{p[0]}', end='')

@@ -1,5 +1,5 @@
 turma = list()
-
+# turma = list((['ana', [10.0, 8.9], 9.45], ['pedro', [3.0, 6.0], 4.5], ['natalia', [10.0, 10.0], 10.0], ['jose', [2.6, 5.6], 4.1], ['marcos', [7.5, 8.7], 8.1], ['lara', [7.8, 9.7], 8.75]))
 while True:
     alunos = list()
     alunos.append(str(input('Nome do aluno: ')))
@@ -23,20 +23,18 @@ while True:
         print('=-' * 50)
         break
 
-print(f'{"ID":<5}{"NOME":<30}{"MÉDIA":<4}\n{"-" * 40}')
+print(f'{"No.":<5}{"NOME":<30}{"MÉDIA":<4}\n{"-" * 40}')
 
-for pos, nome in enumerate(turma):
-    print(f'{pos:<5}{nome:<30}{turma[pos][2]:<4}')
+for pos, aluno in enumerate(turma):
+    print(f'{pos:<5}{aluno[0]:<30}{aluno[2]:<4}')
 
-print('-' * 40)
 while True:
-    mostrar_aluno = input('Desja mostrar as notas de qual aluno?[S - Sair] ')
-    if (mostrar_aluno.upper().strip()[0] != 'S') and (not mostrar_aluno.isnumeric()):
-        print('Opção inválida.')
-    elif mostrar_aluno.upper().strip()[0] == 'S':
-        print(f'{"Finalizado":^40}')
+    print('-' * 40)
+    mostrar_aluno = input('Desja mostrar as notas de qual aluno?\n[S - Sair] ')
+    if (mostrar_aluno.isalpha()) and (mostrar_aluno.upper().strip()[0] == 'S'):
         break
+    elif (mostrar_aluno.isnumeric()) and (int(mostrar_aluno) < len(turma)):
+        print(f'As notas do(a) aluno(a) {turma[int(mostrar_aluno)][0].upper()} são: {turma[int(mostrar_aluno)][1]}')
     else:
-        mostrar_aluno = int(mostrar_aluno)
-
-
+        print('Opção inválida.')
+print(f'{"<<< VOLTE SEMPRE >>>":^50}')
