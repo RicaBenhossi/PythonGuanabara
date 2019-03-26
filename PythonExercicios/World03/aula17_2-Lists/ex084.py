@@ -36,6 +36,6 @@ for p in pessoas:
     if p[1] > mais_pesadas:
         print(f'{p[0]}', end='')
 print(f'O menor peso digitado foi {mais_leves} Kg, das pessoas ', end='')
-for p in pesoas:
+for p in pessoas:
     if p[1] < mais_leves:
         print(f'{p[0]}', end='')

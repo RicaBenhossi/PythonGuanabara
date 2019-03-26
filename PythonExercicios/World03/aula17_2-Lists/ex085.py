@@ -1,7 +1,7 @@
 lista = list(([], []))
 
 for x in range(0, 7):
-    valor = int(input('Digite um valor: '))
+    valor = int(input(f'Digite o {x}o. valor: '))
     if (valor % 2 == 0) or (valor == 0):
         lista[0].append(valor)
     else:
