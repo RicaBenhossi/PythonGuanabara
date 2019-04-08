@@ -1,19 +1,20 @@
 from random import randint
+from operator import itemgetter
+from time import sleep
 
 jogadas = dict()
-maior = 0
-vencedor = ''
 for jogador in range(1, 5):
     jogadas['jogador' + str(jogador)] = randint(1, 7)
-    if jogadas['jogador' + str(jogador)] > maior:
-        maior = jogadas['jogador' + str(jogador)]
-        vencedor = 'jogador' + str(jogador)
-    print(jogadas.items())
 
-print(vencedor)
-print(maior)
-
-ranking = dict()
-ranking[jogador] = jogadas[jogador]
-del jogadas[jogador]
+ranking = list()
+print('Valores Sorteados:')
 for k, v in jogadas.items():
+    print(f'{k} tirou {v} no dado.')
+    sleep(1)
+print('=' * 50)
+print('Ranking:')
+ranking = (sorted(jogadas.items(), key=itemgetter(1), reverse=True))
+# print(ranking)
+
+for i, v in enumerate(ranking):
+    print(f'{i + 1} Lugar: {v[0]} com {v[1]} pontos.')
