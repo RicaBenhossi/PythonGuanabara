@@ -1,13 +1,13 @@
 jogador = dict()
-total_gols = 0
+# total_gols = 0
 
 jogador['nome'] = str(input('Nome do Jogador: '))
 partidas_disputadas = int(input(f'Quantas partidas o jogaor {jogador["nome"]} disputou? '))
 jogador['gols'] = list()
 for partida in range(0, partidas_disputadas):
     jogador['gols'].append(int(input(f'Quantos gols foram marcados na partida {partida + 1}? ')))
-    total_gols += jogador['gols'][partida]
-jogador['total'] = total_gols
+    # total_gols += jogador['gols'][partida]
+jogador['total'] = sum(jogador['gols'])
 
 print('-' * 50)
 print(jogador)

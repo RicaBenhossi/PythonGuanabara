@@ -1,7 +1,8 @@
 grupo = list()
+pessoa = dict()
 media_idade = 0
 while True:
-    pessoa = dict()
+    pessoa.clear()
     pessoa['nome'] = str(input(f'Digite o nome da {len(grupo) + 1} pessoa: '))
     pessoa['idade'] = int(input('Digite a idade: '))
     media_idade += pessoa['idade']
@@ -12,7 +13,9 @@ while True:
         else:
             break
     pessoa['sexo'] = sexo
-    grupo.append(pessoa)
+    # NOTE When doing like below, it makes a link between 2 variables. USE COPY. SAFER.
+    # grupo.append(pessoa)
+    grupo.append(pessoa.copy())
 
     while True:
         continuar = str(input('Deseja continuar? [S/N] ')).strip().upper()
@@ -32,7 +35,7 @@ print('\tItem A')
 print(f'Foi(ram) cadastrada(s) ao todo {len(grupo)} pessoa(s).')
 print('-' * 50)
 print('\tItem B')
-print(f'A idade média do grupo é {media_idade}.')
+print(f'A idade média do grupo é {media_idade:5.2f}.')
 print('-' * 50)
 print('\tItem C e D')
 mulher = list()
@@ -48,7 +51,7 @@ for pessoa in grupo:
         pessoa_idade_maior_media.append(pessoa)
 
 # ITEM C
-print('A(s) mulhere(s) da lista é(são):')
+print('A(s) mulher(es) da lista é(são):')
 for pessoa in mulher:
     print(f'\t{pessoa.upper()}')
 # ITEM D
