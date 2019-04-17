@@ -10,11 +10,11 @@ ranking = list()
 print('Valores Sorteados:')
 for k, v in jogadas.items():
     print(f'{k} tirou {v} no dado.')
-    sleep(1)
+    sleep(0.6)
 print('=' * 50)
 print('Ranking:')
 ranking = (sorted(jogadas.items(), key=itemgetter(1), reverse=True))
 # print(ranking)
 
 for i, v in enumerate(ranking):
-    print(f'{i + 1} Lugar: {v[0]} com {v[1]} pontos.')
+    print(f'\t{i + 1} Lugar: {v[0]} com {v[1]} pontos.')
