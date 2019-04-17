@@ -9,8 +9,9 @@ if not digitar_valores:
                  {'nome': 'Bete', 'gols': [1, 2, 0], 'total': 22},
                  {'nome': 'Clara', 'gols': [1, 3], 'total': 26}]
 else:
+    jogador = dict()
     while True:
-        jogador = dict()
+        # jogador = dict()
         jogador['nome'] = str(input('Nome do Jogador: '))
         partidas_disputadas = int(input(f'Quantas partidas o jogaor {jogador["nome"]} disputou? '))
         jogador['gols'] = list()
@@ -20,7 +21,7 @@ else:
             total_gols += jogador['gols'][partida]
         jogador['total'] = total_gols
         jogadores.append(jogador)
-        del(jogador)
+        # del(jogador)
         while True:
             finaliza = str(input('Deseja continuar? [S/N] ')).strip().upper()
             if (not finaliza) or (finaliza not in 'SN'):
