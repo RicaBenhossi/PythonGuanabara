@@ -18,7 +18,6 @@ def contador(inicio, fim, passo):
     else:
         print('Impossível contar. Mesmo início e fim.')
 
-
     for x in range(inicio, fim, passo):
         print(x, end=' ', flush=True)
         # inicio += passo
@@ -27,7 +26,7 @@ def contador(inicio, fim, passo):
     print('FIM!')
 
 
-# contador(1, 10, 1)
-# contador(10, 1, 2)
+contador(1, 10, 1)
+contador(10, 1, 2)
 print('Sua vez de fazer uma contagem')
 contador((int(input('Inicio: '))), (int(input('Fim: '))), (int(input('Passo: '))))

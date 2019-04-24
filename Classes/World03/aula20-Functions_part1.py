@@ -7,6 +7,7 @@ def dobra(lst):
 def soma2(* valores):
     print(sum(valores))
 
+
 def soma(a, b):
     print(f'A = {a} e B = {b}')
     s = a + b
