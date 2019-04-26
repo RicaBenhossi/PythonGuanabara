@@ -70,4 +70,4 @@ print(f'Y after method = {y} -> Y has not been changed because Y was not used in
 print('=' * 40)
 
 
-teste A1.B0
+teste A2.B0
