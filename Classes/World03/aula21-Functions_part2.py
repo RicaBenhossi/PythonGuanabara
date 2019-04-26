@@ -68,4 +68,6 @@ print(f'X after method = {x} -> X has not been changed because X inside variable
 print(f'Y after method = {y} -> Y has not been changed because Y was not used inside variable_scope (neither GLOBAL nor LOCAL).')
 
 print('=' * 40)
-teste31
+
+
+teste A1.B0
