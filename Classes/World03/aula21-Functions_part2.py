@@ -35,7 +35,6 @@ def variable_scope(a, b, c):
     print(f'C * 2 = {c}')
 
 
-
 # Main code
 # NOTE: help() return to you the docstring and documentation of the method you passed. Type quit to exit.
 print('=' * 40)
@@ -69,3 +68,6 @@ print(f'Y after method = {y} -> Y has not been changed because Y was not used in
 
 print('=' * 40)
 teste31.1
+
+
+teste A2.B0
