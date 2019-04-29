@@ -35,6 +35,10 @@ def variable_scope(a, b, c):
     print(f'C * 2 = {c}')
 
 
+class ClassTeste():
+    pass
+
+
 # Main code
 # NOTE: help() return to you the docstring and documentation of the method you passed. Type quit to exit.
 print('=' * 40)
@@ -67,7 +71,3 @@ print(f'X after method = {x} -> X has not been changed because X inside variable
 print(f'Y after method = {y} -> Y has not been changed because Y was not used inside variable_scope (neither GLOBAL nor LOCAL).')
 
 print('=' * 40)
-teste31.1
-
-
-teste A2.B0
