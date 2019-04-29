@@ -1,13 +1,13 @@
 # NOTE: When help(your_method) it will show the docstring you put between """ """ right after the declaration of the method.
 def docstring(a, b, c):
-    """
+    '''
     *** Here you can put a manual to help others using this method
     param:
-    result: none
+    @result result: none
 
     Author: Me.
     Date:
-    """
+    '''
     pass
 
 
@@ -35,16 +35,22 @@ def variable_scope(a, b, c):
     print(f'C * 2 = {c}')
 
 
+# NOTE: Here the functio will return something to the point where it was called.
+def returning_function(a, b, c):
+    s = a + b + c
+    print(f'\tMethod returning_function will return S({s}) which is the sum of A({a})+B({b})+C({c}).')
+    return s
+
 
 # Main code
 # NOTE: help() return to you the docstring and documentation of the method you passed. Type quit to exit.
-print('=' * 40)
-print('function help()')
-print(help(print))
+# print('=' * 40)
+# print('function help()')
+# print(help(print))
 
-print('=' * 40)
-print('function help() on your own method with a docstring')
-print(help(docstring))
+# print('=' * 40)
+# print('function help() on your own method with a docstring')
+# print(help(docstring))
 
 print('=' * 40)
 print('Function with optional parameters')
@@ -68,6 +74,10 @@ print(f'X after method = {x} -> X has not been changed because X inside variable
 print(f'Y after method = {y} -> Y has not been changed because Y was not used inside variable_scope (neither GLOBAL nor LOCAL).')
 
 print('=' * 40)
+print('Function DocString')
+docstring(2, 9, 9)
 
-
-teste A2.B0
+print('=' * 40)
+print('Function with return')
+r = (returning_function(4, 6, 8))
+print(f'When calling function returning_function, r will receive value {r}.')
