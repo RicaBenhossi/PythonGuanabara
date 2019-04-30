@@ -78,7 +78,6 @@ print(f'X after method = {x} -> X has not been changed because X inside variable
 print(f'Y after method = {y} -> Y has not been changed because Y was not used inside variable_scope (neither GLOBAL nor LOCAL).')
 
 print('=' * 40)
-<<<<<<< HEAD
 print('Function DocString')
 docstring(2, 9, 9)
 
@@ -86,5 +85,3 @@ print('=' * 40)
 print('Function with return')
 r = (returning_function(4, 6, 8))
 print(f'When calling function returning_function, r will receive value {r}.')
-=======
->>>>>>> aade124a0eac56a6c2db7647b72d7873fc6355fd
