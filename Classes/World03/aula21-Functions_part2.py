@@ -70,7 +70,7 @@ print(f'Z = {z}')
 x = 3
 print(f'X = {x}')
 y = 4
-print(f'Y = {y}')
+print(f'\nY = {y}')
 variable_scope(z, x, y)
 # calling here variables a, b, c (from method) causes error.
 print(f'Z after method = {z} -> Z has changed because we called it as GLOBAL inside method variable_scope')
@@ -85,3 +85,8 @@ print('=' * 40)
 print('Function with return')
 r = (returning_function(4, 6, 8))
 print(f'When calling function returning_function, r will receive value {r}.')
+
+teste = "ok"
+print(teste)
+ClassTeste(True, 2, 2.0, 'Exact')
+teste2 = True
