@@ -42,9 +42,17 @@ def returning_function(a, b, c):
     return s
 
 
-class ClassTeste():
-    pass
+class ClassTeste(12, ):
+    # pass
+    First = tetse
 
+
+# if x * + - / % ** =
+
+for x in range(1, 10):
+    pass x
+
+while
 
 # Main code
 # NOTE: help() return to you the docstring and documentation of the method you passed. Type quit to exit.
@@ -90,3 +98,7 @@ teste = "ok"
 print(teste)
 ClassTeste(True, 2, 2.0, 'Exact')
 teste2 = True
+
+teste = ClassTeste()
+teste.first = True
+ClassTeste.First
