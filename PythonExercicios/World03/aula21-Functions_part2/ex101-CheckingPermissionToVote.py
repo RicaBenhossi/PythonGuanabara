@@ -29,5 +29,5 @@ def PodeVotar(nascimento):
 
 
 nascimento = int(input('Informe o ano de seu nascimento: '))
-# print(f'Você possui {date.today().year - nascimento} anos e seu voto é {PodeVotar(nascimento)}.')
+# print(f'Você possui {date.today().year - nascimento} anos e seu voto é {PodeVotar(nascimento)}.') My way
 print(PodeVotar(nascimento))
