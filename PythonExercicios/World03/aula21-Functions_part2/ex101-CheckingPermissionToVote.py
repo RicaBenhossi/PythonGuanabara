@@ -1,4 +1,4 @@
-from datetime import date
+# from datetime import date
 
 
 def PodeVotar(nascimento):
@@ -9,13 +9,25 @@ def PodeVotar(nascimento):
     Returns: String
     '''
 
-    if ((date.today().year - nascimento) >= 18) and ((date.today().year - nascimento) < 65):
-        return 'OBRIGATÓRIO'
-    elif ((date.today().year - nascimento) >= 16) and ((date.today().year - nascimento >= 65)):
-        return 'OPCIONONAL'
+    # We can use import insde a function which saves memory because will be used only in the function.
+    from datetime import date
+
+    # if ((date.today().year - nascimento) >= 18) and ((date.today().year - nascimento) < 65):
+    #     return 'OBRIGATÓRIO'
+    # elif ((date.today().year - nascimento) >= 16) and ((date.today().year - nascimento >= 65)):
+    #     return 'OPCIONONAL'
+    # else:
+    #     return 'NEGADO'
+
+    idade = (date.today().year - nascimento)
+    if 18 <= idade < 65:
+        return f'Você possui {idade} anos e seu voto é OBRIGATÓRIO.'
+    elif (16 <= idade < 18) or (idade >= 65):
+        return f'Você possui {idade} anos e seu voto é OPCIONONAL.'
     else:
-        return 'NEGADO'
+        return f'Você possui {idade} anos e seu voto é NEGADO.'
 
 
 nascimento = int(input('Informe o ano de seu nascimento: '))
-print(f'Você possui {date.today().year - nascimento} anos e seu voto é {PodeVotar(nascimento)}.')
+# print(f'Você possui {date.today().year - nascimento} anos e seu voto é {PodeVotar(nascimento)}.')
+print(PodeVotar(nascimento))
