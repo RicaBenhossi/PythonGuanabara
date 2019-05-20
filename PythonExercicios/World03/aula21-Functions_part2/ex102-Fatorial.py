@@ -13,10 +13,11 @@ def fatorial(num, show=False):
     resultado = num
     for x in range((num - 1), 0, -1):
         if show:
-            print(f'{resultado} x {x} = {resultado * x}')
-
+            print(x, end='')
+            print(' x ' if x > 1 else ' = ', end='')
         resultado *= x
         sleep(0.5)
+    print(resultado)
     print(f'\nO Fatorial de {num} é {resultado}.')
 
 
