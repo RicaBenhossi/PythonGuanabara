@@ -50,7 +50,7 @@ print('Function with optional parameters')
 optional_parameters(1, 2, 3)
 optional_parameters(1, 3)
 optional_parameters(1)
-optional_parameters()
+optional_parameters() #test
 
 print('=' * 40)
 print('Variable Scope')
