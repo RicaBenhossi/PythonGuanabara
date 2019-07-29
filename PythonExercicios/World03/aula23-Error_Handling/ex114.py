@@ -18,4 +18,3 @@ except url.URLError as erro:
     print(erro.__class__)
 else:
     print(browser.open_new_tab("http://.com.br"))
-    pass
