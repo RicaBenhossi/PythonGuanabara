@@ -1,7 +1,18 @@
-def build_menu(menu_part, message=''):
-    message_types = {'header': '=' * 50, 'title': (f'{message:^50}'), 'options': message, 'separator': '-' * 50}
+def options_available():
+    return dict({0: 'Close Application', 1: 'Register a New User', 2: 'List all Users'})
+
+
+def options_numbers():
+    return (options_available().items())
+
+
+def build_menu(menu_part, message='', choosable_menu={}):
+    message_types = {'header': '=' * 50, 'title': (f'{message:^50}'), 'options': choosable_menu, 'separator': '-' * 50}
     try:
-        return message_types[menu_part]
+        if menu_part == 'options':
+            return list((list(message_types[menu_part].keys()), list(message_types[menu_part].values())))
+        else:
+            return message_types[menu_part]
     except KeyError:
         return ''
 
@@ -10,19 +21,8 @@ def show_menu():
     print(build_menu('header'))
     print(build_menu('title', 'MENU - System User Register'))
     print(build_menu('header'))
-    print()
-    print(build_menu('options', '1 - Register a New User'))
-    print(build_menu('options', '2 - List all Users'))
-    print(build_menu('options', '0 - Close Application'))
+    menu_options = options_available()
+    menu_options_builded = build_menu('options', choosable_menu=menu_options)
+    print('\n'.join(map(lambda index, description: str(index) + ' - ' + str(description), menu_options_builded[0], menu_options_builded[1])))
     print(build_menu('separator'))
-
-
-def menu_selection():
-    pass
-
-
-def validate_menu_selection():
-    pass
-
-
-menu_options = dict{0: 'Close Application', 1: 'Register a New User', 2: 'List all Users'}
+    return list(menu_options.keys())
