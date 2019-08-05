@@ -1,10 +1,8 @@
 import menu_tools as menu
+import database_tools as dbtools
 
 
-def load_data_file():
-    pass
-
-
+dbtools.create_data_base_file()
 menu_options = menu.show_menu()
 
 while True:
@@ -13,7 +11,7 @@ while True:
     except ValueError:
         print('The option must be an integer number.')
     except IndexError:
-        print('Invalid menu.')
+        print('Invalid menu option.')
     else:
         if selected_menu == 0:
             print((menu.build_menu('separator')))

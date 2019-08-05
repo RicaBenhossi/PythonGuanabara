@@ -11,8 +11,8 @@
 ## Tasks
 
 - [ ] If the file to store data doesn't exist, create it.
-- [ ] Show up a menu with 3 options: 1 - New User; 2 - List Registred Users; 0 - Exit
-- [ ] Ask for amenu option (validate if menu exist)
+- [x] Show up a menu with 3 options: 1 - New User; 2 - List Registred Users; 0 - Exit
+- [x] Ask for a menu option (validate if menu exist)
 
 ### Menu 1: New User
 
