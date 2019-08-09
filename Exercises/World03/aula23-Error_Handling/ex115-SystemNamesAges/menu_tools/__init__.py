@@ -23,6 +23,6 @@ def show_menu():
     print(build_menu('header'))
     menu_options = options_available()
     menu_options_builded = build_menu('options', choosable_menu=menu_options)
-    print('\n'.join(map(lambda index, description: str(index) + ' - ' + str(description), menu_options_builded[0], menu_options_builded[1])))
+    print('\n'.join(map((lambda index, description: str(index) + ' - ' + str(description)), menu_options_builded[0], menu_options_builded[1])))
     print(build_menu('separator'))
     return list(menu_options.keys())
