@@ -2,7 +2,7 @@ import menu_tools as menu
 import database_tools as dbtools
 
 
-dbtools.create_data_base_file()
+dbtools.data_base_file()
 menu_options = menu.show_menu()
 
 while True:
@@ -15,7 +15,7 @@ while True:
     else:
         if selected_menu == 0:
             print((menu.build_menu('separator')))
-            print(menu.build_menu('title' , 'Thanks for using our System'))
+            print(menu.build_menu('title', 'Thank you for using our System'))
             print((menu.build_menu('separator')))
             break
         elif selected_menu == 1:
