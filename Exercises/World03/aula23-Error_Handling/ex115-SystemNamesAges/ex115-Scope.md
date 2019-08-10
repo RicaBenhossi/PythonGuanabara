@@ -10,7 +10,7 @@
 
 ## Tasks
 
-- [ ] If the file to store data doesn't exist, create it.
+- [x] If the file to store data doesn't exist, create it.
 - [x] Show up a menu with 3 options: 1 - New User; 2 - List Registred Users; 0 - Exit
 - [x] Ask for a menu option (validate if menu exist)
 
@@ -22,8 +22,8 @@
   - [ ] Shouldn't have numbers. It's a name. : Warn about this error
 - [ ] Ask User to input the age (integer)
 - Age Validations
-  - [ ] Type must be an integer: Warn about this error
-  - [ ] Must be positive: : Warn about this error
+  - [x] Type must be an integer: Warn about this error
+  - [X] Must be positive: : Warn about thideas error
 - [ ] Save it in database file
 - [ ] Print a message if the insertion was successfully
 - [ ] Clean up screen and shows up MENU

@@ -29,7 +29,7 @@ while True:
                 if type(valid_age) == int:
                     break
                 else:
-                    os.
+                    # os.
                     print(valid_age)
 
         elif selected_menu == 2:
