@@ -1,0 +1,10 @@
+{
+    "python.pythonPath": "/home/benhossi/Development/Courses/PythonGuanabara/Exercises/World03/aula23-Error_Handling/ex115-SystemNamesAges/venv_PythonGuanabara/bin/python3.7",
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "tests",
+        "-v"
+    ]
+}

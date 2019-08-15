@@ -20,7 +20,6 @@ def build_menu(menu_part, message='', choosable_menu={}):
 def show_menu():
     import os
 
-
     os.system('clear')
     print(build_menu('header'))
     print(build_menu('title', 'MENU - System User Register'))
