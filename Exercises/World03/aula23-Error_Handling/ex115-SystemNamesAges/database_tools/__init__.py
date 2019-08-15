@@ -1,6 +1,7 @@
 import os.path as path_file
 import os
 import json as database_file
+import time
 
 
 def data_base_file(option=0, * data_to_save):
@@ -14,24 +15,30 @@ def data_base_file(option=0, * data_to_save):
 
     os.chdir(path_file.dirname(__file__))
     os.chdir('..')
-    data_base_dir = os.getcwd()
-    if not path_file.isfile('database.json'):
-        with open(data_base_dir + '/database.json', 'x') as dbfile:
-            dbfile.close()
+    data_base_name = 'database.json'
+    if not path_file.isfile(data_base_name):
+        try:
+            with open(data_base_name, 'x') as db_file:
+                db_file.close()
+        except Exception:
+            print('Data Base file could not been created.')
+        else:
             print('Database file successfuly created.')
 
     if option == 1:
         # Save data to File
-        pass
+        # with open(data_base_name, 'w') as dbfile_save:
+        #     pass
         return 'Data successfuly saved.'
+        time.sleep(4)
+
     elif option == 2:
         # Load file to print
-        pass
-
-
-def save_data():
-    pass
-
-
-def load_data():
-    pass
+        try:
+            with open(data_base_name, 'r') as db_file:
+                data_to_print = data_base_file.load(db_file)
+                db_file.close()
+        except Exception:
+            print('Data Base File could not been open.')
+        else:
+            return data_to_print

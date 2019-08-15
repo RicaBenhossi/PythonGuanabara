@@ -36,5 +36,9 @@ while True:
                 else:
                     print(valid_age)
 
+            dbtools.data_base_file(1, name, age)
+
         elif selected_menu == 2:
-            pass
+            data_to_print = dbtools.data_base_file(2)
+            print(data_to_print)
+            restainput('Wan')
