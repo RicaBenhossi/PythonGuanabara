@@ -32,6 +32,7 @@ while True:
                 age = input('Type the person\'s age: ')
                 valid_age = validate_input.validated_age(age)
                 if type(valid_age) == int:
+                    print(f'Age: {valid_age}')
                     break
                 else:
                     print(valid_age)
@@ -40,5 +41,7 @@ while True:
 
         elif selected_menu == 2:
             data_to_print = dbtools.data_base_file(2)
+
             print(data_to_print)
-            restainput('Wan')
+        print(f'{("*" * 5 + " Press any key to return. " + "*" * 5):^50}')
+        input()

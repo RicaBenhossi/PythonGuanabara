@@ -31,10 +31,10 @@
 
 ### Menu 2: List User
 
-- [ ] Open database file
-- [ ] Load all content of the file to a variable and close file
-- [ ] Print all data on screen (table like)
-- [ ] Shows up MENU
+- [x] Open database file
+- [x] Load all content of the file to a variable and close file
+- [x] Print all data on screen (table like)
+- [x] Shows up MENU
 
 ### Menu 0: Exit
 

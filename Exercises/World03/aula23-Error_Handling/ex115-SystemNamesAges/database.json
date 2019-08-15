@@ -1,6 +1,5 @@
-{
-    "person_list": [
-        ["TESTE ONE", 12],
-        ["TEST TWO", 89]
-    ]
-}
+[
+    ["TESTE ONE", 9],
+    ["TEST TWO", 89],
+    ["TEST THREE", 101]
+]

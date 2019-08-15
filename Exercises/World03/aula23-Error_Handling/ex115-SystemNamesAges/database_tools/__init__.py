@@ -36,9 +36,21 @@ def data_base_file(option=0, * data_to_save):
         # Load file to print
         try:
             with open(data_base_name, 'r') as db_file:
-                data_to_print = data_base_file.load(db_file)
+                data_to_print = database_file.load(db_file)
                 db_file.close()
         except Exception:
             print('Data Base File could not been open.')
         else:
-            return data_to_print
+            return format_data_to_print(data_to_print)
+
+
+def format_data_to_print(data_to_print):
+    str_main_separator = ('=' * 50 + '\n')
+    str_separator = ('-' * 50 + '\n')
+    str_title = ((f'{"LIST OF PERSON IN DATA BASE":^50}\n'))
+    str_legend = (f'{"NAME":<47}{"AGE":>3}\n')
+    str_content = str('\n'.join(map(lambda x: f'{x[0]:<47}{x[1]:>3}', data_to_print)) + '\n')
+
+    to_print_string = str_main_separator + str_title + str_separator + str_legend + str_separator + str_content + str_separator + str_main_separator
+
+    return to_print_string
