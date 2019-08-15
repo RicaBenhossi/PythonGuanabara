@@ -18,12 +18,13 @@
 
 - [ ] Ask user to input a new user name (string)
 - Name Validations:
-  - [ ] Cut out spaces at the begining and at the end
-  - [ ] Shouldn't have numbers. It's a name. : Warn about this error
+  - [x] Cut out spaces at the begining and at the end
+  - [x] Shouldn't have numbers. Warn about this error
+  - [x] Must not have special characters (except '-'). Warn about this error.
 - [ ] Ask User to input the age (integer)
 - Age Validations
   - [x] Type must be an integer: Warn about this error
-  - [X] Must be positive: : Warn about thideas error
+  - [X] Must be positive: : Warn about this error
 - [ ] Save it in database file
 - [ ] Print a message if the insertion was successfully
 - [ ] Clean up screen and shows up MENU

@@ -1,7 +1,6 @@
-import menu_tools as menu
 import database_tools as dbtools
-import validation_data_inputs as valid_input
-
+import menu_tools as menu
+import validation_data_inputs.validations as validate_input
 
 dbtools.data_base_file()
 
@@ -21,15 +20,20 @@ while True:
             break
         elif selected_menu == 1:
             while True:
-                # name = input('Type the name of the person: ')
-                break
+                name = input('Type the name of the person: ').strip().upper()
+                (name_is_valid, warn_message) = validate_input.validated_name(name)
+                if name_is_valid:
+                    print(f'Name: {name}')
+                    break
+                else:
+                    print(warn_message)
+
             while True:
                 age = input('Type the person\'s age: ')
-                valid_age = valid_input.validated_age(age)
+                valid_age = validate_input.validated_age(age)
                 if type(valid_age) == int:
                     break
                 else:
-                    # os.
                     print(valid_age)
 
         elif selected_menu == 2:
