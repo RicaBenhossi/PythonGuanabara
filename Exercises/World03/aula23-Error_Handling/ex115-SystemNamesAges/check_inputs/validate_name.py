@@ -1,13 +1,15 @@
 def validated_name(name):
-    """
-    validated_name returns if the name informed is valid (Only lettres, no space at begening and at the end, no commas)
+    if name == '0':
+        return False, None
+    else:
+        (name_is_valid, data_to_print) = validated_name_syntax(name)
+        if not name_is_valid:
+            return False, data_to_print
+        else:
+            return True, f'Name: {data_to_print}'
 
-    Args:
-        name (string): receive the name that user has informed.
 
-    Returns:
-        String: returns the error that was found to be print.
-    """
+def validated_name_syntax(name):
     try:
         if not name:
             return False, 'Type a name to the new person.'
@@ -27,7 +29,7 @@ def validated_name(name):
     except ValueError:
         return False, '"Name" must be a string.'
     else:
-        return True, None
+        return True, name
 
 
 def has_forbiden_special_char(name):
@@ -37,32 +39,3 @@ def has_forbiden_special_char(name):
 
 def has_numbers_inside_string(name):
     return any(char.isdigit() for char in name)
-
-
-def validated_age(age):
-    """
-    validated_age reurn if the informed age is valid (integer, not null and higher than zero)
-
-    Args:
-        age (string): receive the age that user has informed.
-
-    Returns:
-        String: returns the error that was found to be print.
-    """
-    try:
-        valid_age = int(age)
-    except ValueError:
-        return False, 'Age must be and integer value.'
-    else:
-        if valid_age <= 0:
-            return False, 'Age must be higher than ZERO.'
-        else:
-            return valid_age
-
-
-# age = input('age:'
-# message = validated_age(age)
-# if message == '':
-#     return False, 'ok'
-# else:
-#     return message)

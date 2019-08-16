@@ -1,7 +1,6 @@
 import os.path as path_file
 import os
 import json as database_file
-import time
 
 
 def data_base_file(option=0, * data_to_save):
@@ -27,17 +26,20 @@ def data_base_file(option=0, * data_to_save):
 
     if option == 1:
         # Save data to File
-        # with open(data_base_name, 'w') as dbfile_save:
-        #     pass
-        return 'Data successfuly saved.'
-        time.sleep(4)
+        try:
+            with open(data_base_name, 'w') as db_file_save:
+                database_file.dumps(data_to_save, db_file_save)
+        except Exception as error:
+            return f'An error has ocurred. {error}'
+        else:
+            return 'Data successfuly saved.'
 
     elif option == 2:
         # Load file to print
         try:
-            with open(data_base_name, 'r') as db_file:
-                data_to_print = database_file.load(db_file)
-                db_file.close()
+            with open(data_base_name, 'r') as db_file_load:
+                data_to_print = database_file.load(db_file_load)
+                db_file_load.close()
         except Exception:
             print('Data Base File could not been open.')
         else:

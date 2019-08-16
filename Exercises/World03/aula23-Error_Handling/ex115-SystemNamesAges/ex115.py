@@ -1,8 +1,10 @@
-import database_tools as dbtools
+import database_tools as db_tools
 import menu_tools as menu
-import validation_data_inputs.validations as validate_input
+import check_inputs.validate_name as check_name
+import check_inputs.validate_age as check_age
 
-dbtools.data_base_file()
+
+db_tools.data_base_file()
 
 while True:
     menu_options = menu.show_menu()
@@ -20,28 +22,32 @@ while True:
             break
         elif selected_menu == 1:
             while True:
-                name = input('Type the name of the person: ').strip().upper()
-                (name_is_valid, warn_message) = validate_input.validated_name(name)
-                if name_is_valid:
-                    print(f'Name: {name}')
+                name = input('Type the NAME of the person or 0 to return the menu: ').strip().upper()
+                (result_name, return_data) = check_name.validated_name(name)
+                if return_data is None:
                     break
                 else:
-                    print(warn_message)
-
-            while True:
-                age = input('Type the person\'s age: ')
-                valid_age = validate_input.validated_age(age)
-                if type(valid_age) == int:
-                    print(f'Age: {valid_age}')
-                    break
-                else:
-                    print(valid_age)
-
-            dbtools.data_base_file(1, name, age)
+                    print(return_data)
+                    if not result_name:
+                        continue
+                    else:
+                        while True:
+                            age = input('Type the AGE of the person or 0 to return the menu: ')
+                            (result_age, return_data) = check_age.validated_age(age)
+                            if return_data is None:
+                                break
+                            else:
+                                print(return_data)
+                                if not result_age:
+                                    continue
+                                else:
+                                    break
+                        print(db_tools.data_base_file(1, name, age))
+                        break
 
         elif selected_menu == 2:
-            data_to_print = dbtools.data_base_file(2)
+            data_to_print = db_tools.data_base_file(2)
 
             print(data_to_print)
-        print(f'{("*" * 5 + " Press any key to return. " + "*" * 5):^50}')
-        input()
+            print(f'{("*" * 5 + " Press any key to return. " + "*" * 5):^50}')
+            input()
