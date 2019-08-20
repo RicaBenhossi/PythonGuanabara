@@ -2,6 +2,7 @@ import database_tools as db_tools
 import menu_tools as menu
 import check_inputs.validate_name as check_name
 import check_inputs.validate_age as check_age
+import time
 
 
 db_tools.data_base_file()
@@ -43,6 +44,7 @@ while True:
                                 else:
                                     break
                         print(db_tools.data_base_file(1, name, age))
+                        time.sleep(3)
                         break
 
         elif selected_menu == 2:
