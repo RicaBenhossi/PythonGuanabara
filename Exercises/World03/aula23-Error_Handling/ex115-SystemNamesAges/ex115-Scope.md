@@ -25,9 +25,9 @@
 - Age Validations
   - [x] Type must be an integer: Warn about this error
   - [X] Must be positive: : Warn about this error
-- [ ] Save it in database file
-- [ ] Print a message if the insertion was successfully
-- [ ] Clean up screen and shows up MENU
+- [x] Save it in database file
+- [x] Print a message if the insertion was successfully
+- [x] Clean up screen and shows up MENU
 
 ### Menu 2: List User
 
@@ -38,5 +38,5 @@
 
 ### Menu 0: Exit
 
-- [ ] Print a good bye message
-- [ ] Close application
+- [x] Print a good bye message
+- [x] Close application
