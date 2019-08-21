@@ -13,16 +13,20 @@ while True:
     try:
         selected_menu = menu_options[int(input('Type the menu option you want to access: '))]
     except ValueError:
-        print('The option must be an integer number.')
+        print(menu.build_menu('separator'))
+        print(menu.build_menu('title', 'The option must be an integer number.'))
+        print(menu.build_menu('separator'))
         getch.pause(f'{("*" * 5 + " Press any key to return. " + "*" * 5):^50}')
     except IndexError:
-        print('Invalid menu option.')
+        print(menu.build_menu('separator'))
+        print(menu.build_menu('title', 'Invalid menu option.'))
+        print(menu.build_menu('separator'))
         getch.pause(f'{("*" * 5 + " Press any key to return. " + "*" * 5):^50}')
     else:
         if selected_menu == 0:
-            print((menu.build_menu('separator')))
+            print(menu.build_menu('separator'))
             print(menu.build_menu('title', 'Thank you for using our System'))
-            print((menu.build_menu('separator')))
+            print(menu.build_menu('separator'))
             break
         elif selected_menu == 1:
             while True:
@@ -46,7 +50,9 @@ while True:
                                     continue
                                 else:
                                     break
-                        print(db_tools.data_base_file(1, name, age))
+                        print(menu.build_menu('separator'))
+                        print(menu.build_menu('title', db_tools.data_base_file(1, name, age)))
+                        print(menu.build_menu('separator'))
                         time.sleep(3)
                         break
 
