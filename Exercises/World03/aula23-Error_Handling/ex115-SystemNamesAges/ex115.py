@@ -3,6 +3,7 @@ import menu_tools as menu
 import check_inputs.validate_name as check_name
 import check_inputs.validate_age as check_age
 import time
+import getch
 
 
 db_tools.data_base_file()
@@ -13,8 +14,10 @@ while True:
         selected_menu = menu_options[int(input('Type the menu option you want to access: '))]
     except ValueError:
         print('The option must be an integer number.')
+        getch.pause(f'{("*" * 5 + " Press any key to return. " + "*" * 5):^50}')
     except IndexError:
         print('Invalid menu option.')
+        getch.pause(f'{("*" * 5 + " Press any key to return. " + "*" * 5):^50}')
     else:
         if selected_menu == 0:
             print((menu.build_menu('separator')))
@@ -49,7 +52,5 @@ while True:
 
         elif selected_menu == 2:
             data_to_print = db_tools.data_base_file(2)
-
             print(data_to_print)
-            print(f'{("*" * 5 + " Press any key to return. " + "*" * 5):^50}')
-            input()
+            getch.pause(f'{("*" * 5 + " Press any key to return. " + "*" * 5):^50}')
