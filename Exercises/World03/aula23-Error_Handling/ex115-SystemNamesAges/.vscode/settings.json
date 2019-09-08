@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "venv_PythonGuanabara/bin/python",
+    "python.pythonPath": "venv_ex115/bin/python",
     "python.testing.unittestEnabled": false,
     "python.testing.nosetestsEnabled": false,
     "python.testing.pytestEnabled": true,
